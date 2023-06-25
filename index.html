@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <form name="calc">
+        <div>
+            <p id="title">Calculator</p>
+            <p id="historic"></p>
+            <input type="text" id="display" value="" disabled>
+        </div>
+        <div id="botoes">
+            <input type="button" value="(" onclick="atualizarDisplay(value)" class="operations">
+            <input type="button" value=")" onclick="atualizarDisplay(value)" class="operations">
+            <input type="button" value="C" onclick="limparDisplay()" class="operations">
+            <input type="button" value="Del" onclick="excluir()" class="operations">
+
+            <input type="button" value="%" onclick="porcentagem()" class="operations">
+            <input type="button" value="√" onclick="raiz()" class="operations">
+            <input type="button" value="x&sup2" onclick="quadrado()" class="operations">
+            <input type="button" value="&divide" onclick="atualizarDisplay('/')" class="operations">
+
+            <input type="button" value="7" onclick="atualizarDisplay(value)" class="num">
+            <input type="button" value="8" onclick="atualizarDisplay(value)" class="num">
+            <input type="button" value="9" onclick="atualizarDisplay(value)" class="num">
+            <input type="button" value="x" onclick="atualizarDisplay('*')" class="operations">
+
+            <input type="button" value="4" onclick="atualizarDisplay(value)" class="num">
+            <input type="button" value="5" onclick="atualizarDisplay(value)" class="num">
+            <input type="button" value="6" onclick="atualizarDisplay(value)" class="num">
+            <input type="button" value="-" onclick="atualizarDisplay(value)" class="operations">
+
+            <input type="button" value="1" onclick="atualizarDisplay(value)" class="num">
+            <input type="button" value="2" onclick="atualizarDisplay(value)" class="num">
+            <input type="button" value="3" onclick="atualizarDisplay(value)" class="num">
+            <input type="button" value="+" onclick="atualizarDisplay(value)" class="operations">
+
+            <input type="button" value="CE" onclick="limparHistorico()" class="operations">
+            <input type="button" value="0" onclick="atualizarDisplay(value)" class="num">
+            <input type="button" value="," onclick="atualizarDisplay('.')" class="operations">
+            <input type="button" value="=" onclick="resultado()" class="operations" id="result">
+        </div>
+    </form>
+    <a id="eu" href="https://github.com/ronald7j" target="_blank">Ronald José</a>
+    <script src="calc.js"></script>
+</body>
+</html>
